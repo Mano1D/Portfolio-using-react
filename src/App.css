@@ -1,0 +1,185 @@
+/* General body styling */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Side Navigation Bar */
+#sideNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: #888483; /* Slightly subdued background color */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#sideNav .navbar-brand {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#sideNav .navbar-brand img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  margin-bottom: 10px;
+}
+
+#sideNav .navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+  width: 100%;
+}
+
+#sideNav .nav-link {
+  color: #fff;
+  font-size: 18px;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+#sideNav .nav-link:hover {
+  background-color: #434140;
+  text-decoration: none;
+}
+
+/* Main Content Section */
+.container-fluid {
+  margin-left: 250px;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.85); /* Slightly transparent background to blend */
+  border-radius: 20px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow to prevent it looking boxed */
+}
+
+.resume-section {
+  margin-bottom: 60px;
+  padding: 40px 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Light background for text sections */
+  border-radius: 15px; /* Rounded corners for a softer look */
+  margin-top: -30px; /* Move the section slightly upwards */
+}
+
+.resume-section h1 {
+  font-size: 60px; /* Increased font size */
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: -30px; /* Move upwards */
+}
+
+.resume-section h1 .text-primary {
+  color: #f04e23;
+}
+
+.resume-section h2 {
+  font-size: 36px; /* Increased font size */
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: -20px; /* Move upwards */
+}
+
+.resume-section .subheading {
+  font-size: 22px; /* Increased font size */
+  color: #555;
+  margin-bottom: 20px;
+  margin-top: -15px; /* Move upwards */
+}
+
+.resume-section .lead {
+  font-size: 22px; /* Increased font size */
+  line-height: 1.6;
+  margin-top: -10px; /* Move upwards */
+}
+
+/* Social Icons */
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  font-size: 28px; /* Increased icon size */
+  color: #f04e23;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #d84315;
+}
+
+/* Skills Section */
+.dev-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.dev-icons i {
+  font-size: 36px;
+  color: #f04e23;
+}
+
+/* Awards Section */
+.fa-li {
+  position: relative;
+  left: -2em;
+  color: #f04e23;
+}
+
+.fa-trophy {
+  color: #f8d568;
+}
+
+/* Experience and Education Sections */
+.d-flex {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.d-flex .flex-grow-1 {
+  margin-bottom: 10px;
+}
+
+.text-primary {
+  color: #f04e23 !important;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #sideNav {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .container-fluid {
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .resume-section h1 {
+    font-size: 40px;
+    margin-top: -20px; /* Move upwards */
+  }
+
+  .resume-section h2 {
+    font-size: 30px;
+    margin-top: -15px; /* Move upwards */
+  }
+}

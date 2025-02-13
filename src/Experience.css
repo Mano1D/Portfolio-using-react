@@ -1,0 +1,130 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: auto; /* Allow scrolling */
+}
+
+.container-fluid {
+  width: 100%;
+  padding: 0;
+  min-height: 100vh; /* Ensures full viewport height */
+  overflow: auto; /* Allows scrolling */
+  padding-top: 200px; /* Adjust based on navbar height */
+}
+
+.projects-section {
+  padding: 120px 20px 40px; /* Increased top padding to ensure content is visible */
+  min-height: auto; 
+  margin-left: 50px;
+  padding-top: 20px;
+  padding-bottom: 40px; /* Offset for sidebar */
+}
+
+.projects-section-content {
+  max-width: 900px;
+  margin: auto;
+  padding: 0px;
+}
+
+/* Fix for navbar overlap */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #007bff;
+  padding: 15px 20px;
+  z-index: 1000;
+  height: 70px; /* Set a fixed height for the navbar */
+}
+
+.sidebar {
+  position: fixed;
+  top: 100px; /* Start below the navbar */
+  left: 0;
+  width: 250px;
+  height: calc(100vh - 70px); /* Adjust height to account for navbar */
+  background: #333;
+  color: white;
+  z-index: 1000;
+  overflow: auto; /* Ensure sidebar is scrollable */
+}
+
+/* Ensure scrolling works properly */
+body {
+  overflow: auto !important;
+}
+
+/* Fix for bottom content visibility */
+.container-fluid {
+  padding-bottom: 100px; 
+  padding-top: 100px;/* Add extra padding to prevent cut-off */
+}
+
+/* Center project images and increase size */
+.project-card {
+  display: block;
+  text-align: center;
+  background: #fff;
+  padding: 20px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  padding-top: 200px;
+}
+
+.project-image img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+/* Ensure footer and last elements are visible */
+hr {
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+/* Ensure the heading is properly visible */
+.projects-section h2 {
+  margin-top: 0px; /* Remove extra margin */
+  font-size: 32px;
+  text-align: center;
+  padding-top: 700px;
+}
+
+/* Ensure project cards do not overlap */
+.project-card {
+  display: flex;
+  flex-direction: column; /* Stack title, description, and image */
+  align-items: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+/* Ensure images are visible */
+.project-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+/* Fix the gallery spacing */
+.gallery {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.gallery-container img {
+  max-width: 80%;
+  height: auto;
+  margin: 10px;
+}
