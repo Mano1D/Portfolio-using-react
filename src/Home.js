@@ -15,7 +15,7 @@ const Home = () => {
                         </h1>
                         <div className="subheading mb-5">
                             Karpagam Institute Of Technology, Coimbatore<br />
-                            9894939261<br />
+                            {/* 9894939261<br /> */}
                             <a href="mailto:manonmani192005@gmail.com">manonmani192005@gmail.com</a>
                         </div>
                         <p className="lead mb-5">
